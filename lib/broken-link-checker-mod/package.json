@@ -1,0 +1,83 @@
+{
+  "name": "broken-link-checker",
+  "description": "Find broken links, missing images, etc in your HTML.",
+  "version": "0.6.5",
+  "license": "MIT",
+  "homepage": "https://github.com/stevenvachon/broken-link-checker",
+  "author": {
+    "name": "Steven Vachon",
+    "email": "contact@svachon.com",
+    "url": "http://www.svachon.com/"
+  },
+  "main": "lib",
+  "bin": {
+    "blc": "bin/blc",
+    "broken-link-checker": "bin/blc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevenvachon/broken-link-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenvachon/broken-link-checker/issues"
+  },
+  "dependencies": {
+    "bhttp": "^1.2.1",
+    "calmcard": "~0.1.1",
+    "chalk": "^1.1.0",
+    "char-spinner": "^1.0.1",
+    "default-user-agent": "^1.0.0",
+    "limited-request-queue": "^1.0.0",
+    "object-assign": "^3.0.0",
+    "nopter": "~0.3.0",
+    "parse5": "^1.5.0",
+    "urlcache": "~0.3.0",
+    "urlobj": "0.0.7",
+    "void-elements": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "node-static": "~0.7.7"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "scripts": {
+    "test": "mocha test/ --reporter spec --check-leaks --bail",
+    "test-watch": "mocha test/ --reporter spec --check-leaks --bail -w"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "license"
+  ],
+  "keywords": [
+    "uri",
+    "url",
+    "links",
+    "404"
+  ],
+  "gitHead": "e34c493d51c8643b108fab64bdb12cf45249e8e6",
+  "_id": "broken-link-checker@0.6.5",
+  "_shasum": "3afb1acac184ff1df16920dfdf12af5e8a8c8ece",
+  "_from": "broken-link-checker@*",
+  "_resolved": "https://registry.npmjs.org/broken-link-checker/-/broken-link-checker-0.6.5.tgz",
+  "_npmVersion": "2.13.3",
+  "_nodeVersion": "3.0.0",
+  "_npmUser": {
+    "name": "stevenvachon",
+    "email": "contact@svachon.com"
+  },
+  "dist": {
+    "shasum": "3afb1acac184ff1df16920dfdf12af5e8a8c8ece",
+    "tarball": "http://registry.npmjs.org/broken-link-checker/-/broken-link-checker-0.6.5.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "stevenvachon",
+      "email": "contact@svachon.com"
+    }
+  ],
+  "directories": {}
+}
