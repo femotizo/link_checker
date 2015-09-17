@@ -55,6 +55,7 @@ function findBroken (page, basePage) {
             console.log(chalk.magenta("Error: ", breakage.error));
             console.log(chalk.gray.dim("-----"));
           });
+          process.exit(1);
         }
       }
     }
@@ -62,18 +63,19 @@ function findBroken (page, basePage) {
   var requestOptions = {
     followRedirect: true,
     followAllRedirects: true,
-    maxRedirects: 15,
+    maxRedirects: 10,
     uri: page
   };
   request(requestOptions).then((html) => {
     checker.scan(html, basePage);
   }).catch((err) => {
-    console.log("ERROR: ", err);
+    console.log(chalk.red("Error while crawling.\n", err.message));
+    process.exit(1);
   });
 };
 
 function searchSite (basePage) {
-  findBroken(basePage, basePage)
+  return findBroken(basePage, basePage)
 }
 
 var site = process.argv.slice(2)[0];

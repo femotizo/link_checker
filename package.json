@@ -1,6 +1,6 @@
 {
   "name": "linkchecker",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Find broken links on a domain",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "babel": "^5.8.23",
-    "broken-link-checker": "^0.6.5",
     "chalk": "^1.1.1",
     "request-promise": "^0.4.3",
     "bhttp": "^1.2.1",
